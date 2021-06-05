@@ -1,0 +1,271 @@
+[unit_early_fighter]
+name          = _("Early Fighter")
+class         = "Air"
+tech_req      = "Flight"
+obsolete_by   = "Radio"
+graphic       = "u.early_fighter"
+graphic_alt   = "u.fighter"
+sound_move    = "m_fighter"
+sound_move_alt = "m_generic"
+sound_fight   = "f_fighter"
+sound_fight_alt = "f_generic"
+build_cost    = 20
+pop_cost      = 0
+attack        = 4
+defense       = 4
+hitpoints     = 20
+firepower     = 1
+move_rate     = 8
+vision_radius_sq = 50
+transport_cap = 0
+fuel          = 2
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+targets       = "Air", "Missile", "Helicopter"
+flags         = "AirAttacker", "HasNoZOC", "OneAttack"
+roles         = "DefendOk", "DefendOkStartUnit"
+helptext      = _("\
+Early Fighters are your first fighter units. They can\
+ move anywhere and attack any unit. The fighter will lose all moves when attacking another unit.\
+"),
+; /* xgettext:no-c-format */
+_("\
+Early fighters and other aircraft lose 10% of their hitpoints for every \
+turn not spent in a city, airstrip, or airbase, or on a Carrier.\
+")
+
+[unit_early_bomber]
+name          = _("Early Bomber")
+class         = "Air"
+tech_req      = "Flight"
+obsolete_by   = "Bomber"
+graphic       = "u.early_bomber"
+graphic_alt   = "u.bomber"
+sound_move    = "m_bomber"
+sound_move_alt = "m_generic"
+sound_fight   = "f_bomber"
+sound_fight_alt = "f_generic"
+build_cost    = 45
+pop_cost      = 0
+attack        = 3
+defense       = 1
+hitpoints     = 30
+firepower     = 1
+move_rate     = 20
+vision_radius_sq = 60
+transport_cap = 0
+fuel          = 2
+uk_happy      = 1
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+flags         = "FieldUnit", "OneAttack", "AirAttacker", "Bombarder", "HasNoZOC"
+roles         = ""
+helptext      = _("\
+Early bombers are specialized airborne units that may\
+ only attack ground targets, not other airborne\
+ units.\
+"), _("\
+A Bomber's attack against units on land is a bombard attack; against\
+ units on water it has a regular attack.\
+"),
+; /* xgettext:no-c-format */
+_("\
+As with other aircraft, Bombers lose 10% of their hitpoints for every \
+turn not spent in a city, airstrip, or airbase, or on a Carrier.\
+")
+bombard_rate = 3
+
+[unit_early_jet_fighter]
+name          = _("Early Jet Fighter")
+class         = "Air"
+tech_req      = "Rocketry"
+obsolete_by   = "Space Flight"
+graphic       = "u.early_jet_fighter"
+graphic_alt   = "fighter"
+sound_move    = "m_stealth_fighter"
+sound_move_alt = "m_generic"
+sound_fight   = "f_stealth_fighter"
+sound_fight_alt = "f_generic"
+build_cost    = 55
+pop_cost      = 0
+attack        = 6
+defense       = 5
+hitpoints     = 20
+firepower     = 1
+move_rate     = 15
+vision_radius_sq = 72
+transport_cap = 0
+fuel          = 2
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+targets       = "Air", "Missile", "Helicopter"
+flags         = "Partial_Invis", "AirAttacker", "HasNoZOC", "OneAttack"
+roles         = "DefendGood", "DefendGoodStartUnit"
+helptext      = _("\
+An improved Fighter, with improved attack and a higher movement\
+ radius.\
+")
+
+[unit_jet_fighter]
+name          = _("Jet Fighter")
+class         = "Air"
+tech_req      = "Space Flight"
+obsolete_by   = "Stealth"
+graphic       = "u.jet_fighter"
+graphic_alt   = "fighter"
+sound_move    = "m_stealth_fighter"
+sound_move_alt = "m_generic"
+sound_fight   = "f_stealth_fighter"
+sound_fight_alt = "f_generic"
+build_cost    = 65
+pop_cost      = 0
+attack        = 7
+defense       = 6
+hitpoints     = 20
+firepower     = 1
+move_rate     = 17
+vision_radius_sq = 72
+transport_cap = 0
+fuel          = 2
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+targets       = "Air", "Missile", "Helicopter"
+flags         = "Partial_Invis", "AirAttacker", "HasNoZOC", "OneAttack"
+roles         = "DefendGood", "DefendGoodStartUnit"
+helptext      = _("\
+An improved Fighter, with improved attack and a higher movement\
+ radius.\
+")
+
+[unit_advanced_bomber]
+name          = _("advanced Bomber")
+class         = "Air"
+tech_req      = "Plastics"
+obsolete_by   = "Stealth Bomber"
+graphic       = "u.advanced_bomber"
+graphic_alt   = "u.bomber"
+sound_move    = "m_bomber"
+sound_move_alt = "m_generic"
+sound_fight   = "f_bomber"
+sound_fight_alt = "f_generic"
+build_cost    = 100
+pop_cost      = 0
+attack        = 7
+defense       = 1
+hitpoints     = 30
+firepower     = 1
+move_rate     = 30
+vision_radius_sq = 72
+transport_cap = 0
+fuel          = 2
+uk_happy      = 1
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+flags         = "FieldUnit", "OneAttack", "AirAttacker", "Bombarder", "HasNoZOC"
+roles         = ""
+helptext      = _("\
+Advanced bombers are specialized airborne units that may\
+ only attack ground targets, not other airborne\
+ units.\
+"), _("\
+A Bomber's attack against units on land is a bombard attack; against\
+ units on water it has a regular attack.\
+"),
+; /* xgettext:no-c-format */
+_("\
+As with other aircraft, Bombers lose 10% of their hitpoints for every \
+turn not spent in a city, airstrip, or airbase, or on a Carrier.\
+")
+bombard_rate = 3
+
+[unit_attack_aircraft]
+name          = _("Attack Aircraft")
+class         = "Air"
+tech_req      = "Mobile Warfare"
+obsolete_by   = "Advanced Attack Aircraft"
+graphic       = "u.attack_aircraft"
+graphic_alt   = "u.fighter"
+sound_move    = "m_fighter"
+sound_move_alt = "m_generic"
+sound_fight   = "f_bomber"
+sound_fight_alt = "f_generic"
+build_cost    = 50
+pop_cost      = 0
+attack        = 4
+defense       = 4
+hitpoints     = 25
+firepower     = 1
+move_rate     = 10
+vision_radius_sq = 72
+transport_cap = 0
+fuel          = 2
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+bonuses       =
+   { "flag", "type", "value"
+     "Horse", "DefenseMultiplier", 1
+   }
+targets       = "Air", "Missile", "Helicopter"
+flags         = "AirAttacker", "HasNoZOC", "OneAttack", "KillCitizen"
+roles         = "DefendOk", "DefendOkStartUnit"
+helptext      = _("\
+Attack Aircraft are your first attack aircraft units. They can\
+ move anywhere and attack any unit. The Attack Aircraft will lose all moves when attacking another unit.\
+"),
+; /* xgettext:no-c-format */
+_("\
+Attack Aircraft and other aircraft lose 10% of their hitpoints for every \
+turn not spent in a city, airstrip, or airbase, or on a Carrier.\
+")
+
+[unit_advanced_attack_aircraft]
+name          = _("Advanced Attack Aircraft")
+class         = "Air"
+tech_req      = "Laser"
+obsolete_by   = "None"
+graphic       = "u.advanced_attack_aircraft"
+graphic_alt   = "u.fighter"
+sound_move    = "m_fighter"
+sound_move_alt = "m_generic"
+sound_fight   = "f_bomber"
+sound_fight_alt = "f_generic"
+build_cost    = 80
+pop_cost      = 0
+attack        = 8
+defense       = 8
+hitpoints     = 25
+firepower     = 1
+move_rate     = 16
+vision_radius_sq = 72
+transport_cap = 0
+fuel          = 2
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+bonuses       =
+   { "flag", "type", "value"
+     "Horse", "DefenseMultiplier", 1
+   }
+targets       = "Air", "Missile", "Helicopter"
+flags         = "AirAttacker", "HasNoZOC", "OneAttack", "KillCitizen"
+roles         = "DefendOk", "DefendOkStartUnit"
+helptext      = _("\
+Advanced Attack Aircraft are your second attack aircraft units. They can\
+ move anywhere and attack any unit. The Attack Aircraft will lose all moves when attacking another unit.\
+"),
+; /* xgettext:no-c-format */
+_("\
+Attack Aircraft and other aircraft lose 10% of their hitpoints for every \
+turn not spent in a city, airstrip, or airbase, or on a Carrier.\
+")
